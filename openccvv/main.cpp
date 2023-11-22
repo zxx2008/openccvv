@@ -17,7 +17,7 @@ using namespace cv;
 int main() {
 	initgraph(WIDTH, HEIGHT);
 	//Bad Apple but it's in 4k 60fps
-	VideoCapture video("D:\\BaiduNetdiskDownload\\Bad Apple but it's in 4k 60fps.mp4");
+	VideoCapture video("D:\\BaiduNetdiskDownload\\testout.mp4");
 
 	mciSendString("open 1.mp3", 0, 0, 0);
 
@@ -61,7 +61,7 @@ int main() {
 		//imshow("BadApple", img);
 		mciSendString("play 1.mp3", 0, 0, 0);
 		//ÑÓÊ±30ms
-		int key = waitKey(0);
+		int key = waitKey(25);
 		if (key == ' ')
 			break;
 		FlushBatchDraw();	//Ë«»º³å»æÍ¼
