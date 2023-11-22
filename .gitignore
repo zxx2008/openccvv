@@ -1,0 +1,5 @@
+Debug/
+*/Debug
+*/*.user
+.vs/
+openccvv/1.mp4
